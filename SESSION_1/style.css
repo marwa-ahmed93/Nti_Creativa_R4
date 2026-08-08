@@ -1,0 +1,55 @@
+/* h2{
+    background-color: aqua;
+}
+.head-two{
+    text-align: center;
+}
+.head-color{
+color: aliceblue;
+} */
+.item {
+  /* background-color: blueviolet; 
+  width: 400px;
+    text-align: center; */
+
+/* background-color: tomato; */
+/* width: 400px; */
+width: 32.3%;
+text-align: center; 
+display: inline-block;
+
+}
+.item img {
+  width: 100%; 
+}
+h1{
+    text-align: center;
+}
+span{
+    color: blue;
+}
+/* h1{
+    background-color: red;
+}
+a{
+    display: block;
+    background-color: aqua;
+    width: 20%;
+}
+h3{
+    background-color: blue;
+    display: inline-block;
+    width: 49%;
+} */
+/*default value
+width 100%
+height auto
+    background-color: transparent;
+      color: black;
+*/
+
+
+.items{
+    /* background-color: blue; */
+    text-align: center;
+}
