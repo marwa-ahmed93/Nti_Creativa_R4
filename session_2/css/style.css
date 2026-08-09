@@ -1,0 +1,217 @@
+
+
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+
+.item{
+background-color: red;
+width: 49%;
+text-align: center;
+/* display: inline-flex; */
+}
+
+/* Border
+
+1-style
+2-width
+3-color
+
+*/
+
+.bord{
+    width: 300px;
+    height: 300px;
+    /* background-color:maroon ; */
+    /* border-style: dotted;
+    border-color: blue;
+    border-width: 15px; */
+    border: solid  15px red;
+    /* border-bottom: 15px dotted green; */
+    /* border-right: 15px dotted yellow;
+    border-left: 15px dotted yellow;
+    border-top: 15px dotted green; */
+    /* border-radius: 50%; */
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+@font-face {
+    font-family: hombozo;
+    src: url(Alegreya-Italic-VariableFont_wght.ttf);
+}
+
+/* FONTS
+font-size: 16px  default
+font-weight: 400 default    100   => 900
+*/
+
+.font-one{
+    font-size: 16px;
+    font-weight:400 ;
+    font-style: normal;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+      font-family: "Playwrite VN", cursive;
+
+}
+.font-two{
+
+      font-family: hombozo;
+
+}
+
+
+/*
+1-Spacing
+  margin    && padding 
+*/
+.spacing{
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    /* margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px; */
+    margin: 200px  auto ;
+    /* padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px; */
+    padding: 30px 30px;
+    text-align: center;
+}
+
+/*
+background img
+ background-size: 100% 100%;  cover
+*/
+.back-img{
+    width: 700px;
+    height: 900px;
+    border: 3px solid red;
+    /* background-color: blue; */
+    background-image: url(images/bgs.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    /* background-image: url(images/images.jpg) , url(images/taxi.png);
+    background-repeat: no-repeat  , repeat-x;
+    background-position: center center , 0  0 ; */
+
+}
+.back-img p{
+   color: #fff;
+   font-family: hombozo; 
+}
+
+
+/*    Float   */
+
+.meals{
+    /* background-color: greenyellow; */
+    width: 95%;
+    margin: 50px auto;
+ 
+}
+.meal{
+
+    width: 25%;
+    text-align: center;
+    /* display: inline-block; */
+    float: left;
+
+      padding: 15px;
+    /* border: 5px solid teal; */
+    /* margin: 10px; */
+}
+.meal p{
+    font-family: hombozo;
+    color: gray;
+}
+.meal .line{
+    width: 30%;
+    height: 3px;
+    margin: auto;
+    background-color: gray;
+}
+.meal img{
+    border-radius: 50%;
+}
+.clr{
+    clear: both;
+}
+
+
+.test{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    padding: 10px;
+    /* padding: 10px; */
+    /* border: 5px solid #000; */
+}
+.inner{
+    background-color: tomato;
+}
+.test p{
+    background-color: red ;
+}
+
+
+/* RWD 
+--media query   RWD
+  600> xs
+  600 >sm> 768
+  768> md >992
+  992> lg >1200
+       xl>1200
+*/
+
+
+@media screen and (max-width:700px) {
+
+    /* body{
+     background-color: yellowgreen;
+    } */
+/* 
+    .meal{
+        width: 100%;
+    } */
+}
+
+
+
+@media screen and (min-width:1200px) {
+        .meal{
+        width: 25%;
+    } 
+}
+
+@media screen and (max-width:1199px)  and (min-width:992px) {
+        .meal{
+        width: 25%;
+    } 
+}
+
+@media screen and (max-width:991px)  and (min-width:768px) {
+        .meal{
+        width: 50%;
+    } 
+}
+@media screen and (max-width:767px)  and (min-width:600px) {
+        .meal{
+        width: 100%;
+    } 
+}
+@media screen and (max-width:599px)  {
+        .meal{
+        width: 100%;
+    } 
+}
+
+/*
+ header  100vh
+*/

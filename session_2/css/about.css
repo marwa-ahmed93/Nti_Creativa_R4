@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+header{
+background-image: url(../images/shutterstock_277750193.jpg);
+background-size: cover;
+background-position: center center;
+height: 100vh;
+
+}
+
+.pos{
+    width: 50%;
+    height: 200px;
+    background-color: green;
+    /* margin-top: 400px;
+    margin-left: 800px; */
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* top: 0; */
+    /* right: 0; */
+    /* left: 0; */
+
+
+
+    position: absolute;
+    bottom:  0;
+    right: 10px;
+
+}
+
+.parent{
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    position: relative;
+}
+.container{
+    width: 600px;
+    height: 600px;
+    background-color: blue;
+     position: relative;
+}
+
+
+.fixed{
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    position: fixed;
+    top: 50%;
+    right: 5px;
+    /* position: relative;
+    top: 10px; */
+}
+.stiky{
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+}
+
+.one{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    position: absolute;
+    right: 200px;
+    top: 300px;
+    z-index: 1;
+}
+.two{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(170, 43, 43);
+        position: absolute;
+    right: 220px;
+    top: 320px;
+    z-index: 4;
+
+}
+.three{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(15, 78, 39);
+    position: absolute;
+    right: 240px;
+    top: 340px;
+    z-index: 0;
+
+}
