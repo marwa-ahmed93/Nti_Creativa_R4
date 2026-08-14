@@ -1,0 +1,451 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.parent{
+    background-color: tan;
+    width: 90%;
+    margin: 50px auto;
+}
+.item{
+  
+    width: calc(100% / 3);
+    /* width: 20%; */
+    text-align: center;
+    float: left;
+    padding: 15px;
+  
+}
+.inner{
+  background-color: aquamarine;
+  padding: 10px;
+     border-radius: 15px;
+}
+.item img{
+    width: 90%;
+    border-radius: 15px;
+}
+.clr{
+    clear: both;
+}
+
+
+
+
+.pos{
+    width: 200px;
+    height: 200px;
+    background-color: firebrick;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+
+
+/*********************  overflow *************************************/
+/*
+overflow: hidden;
+overflow: scroll;
+overflow: auto;
+*/
+
+.over{
+    width: 200px;
+    height: 199px;
+    /* background-color: antiquewhite; */
+    border: 3px solid teal;
+    overflow: auto;
+}
+
+
+nav{
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4); */
+}
+
+nav ul{
+    /* background-color: tomato; */
+    /* list-style-type: none;
+      overflow: auto; */
+}
+
+li{
+    /* background-color: yellowgreen; */
+    /* width: 15%;
+    padding: 15px;
+    float: left;
+    color: aliceblue; */
+}
+
+
+/*******************  collapse margin *************************/
+
+
+.parent-m{
+    width: 300px;
+    height: 300px;
+    background-color: tomato;
+    /* padding: .2px; */
+    /* border: 0.1px  solid tomato; */
+    overflow: hidden;
+}
+.ch{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    margin-top: 50px;
+}
+
+
+
+
+
+header{
+    background-image: url(../images/shutterstock_277750193.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+}
+.layer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6)
+}
+
+.caption{
+    background-color: tomato;
+    width: 40%;
+    text-align: center;
+    margin: 100px auto;
+}
+
+
+/***********************  hidden element    *********************************/
+/*
+display: block;
+ visibility: visible;
+ opacity: 1;
+ rgba
+*/
+
+.hidd{
+    width: 150px;
+    height: 150px;
+    background-color: rgba(100, 150, 20,0.5);
+    /* display: none; */
+    /* visibility: hidden; */
+    /* opacity: 0.3; */
+}
+
+
+/*
+R          G          B (  ,  ,  )
+0-255    0-255        0-255
+*/
+
+
+
+
+/**********************   transition  ***************************************/
+/*
+ transition-property:
+  transition-duration:
+  transition-delay:
+*/
+
+.hov{
+    width: 150px;
+    height: 150px;
+    background-color: red !important;
+    /* transition-property:background-color  width; */
+    /* transition-duration: 2s;
+    transition-delay: 1s; */
+    /* transition-timing-function:cubic-bezier(.12,.52,.96,.66) ; */
+
+transition: all 2s 1s;
+
+
+}
+/* .hov{
+    background-color: goldenrod !important;
+} */
+
+/* .hov:hover{
+    background-color: green;
+    width: 300px;
+} */
+
+
+
+
+/************************  ID  ******************************/
+
+#home{
+    height: 80vh;
+    background-color: aqua;
+    text-align: center;
+    padding: 15px;
+}
+
+#about{
+    height: 80vh;
+    background-color: rgb(0, 255, 0);
+    text-align: center;
+    padding: 15px;
+}
+
+#contact{
+    height: 80vh;
+    background-color: rgb(251, 255, 0);
+    text-align: center;
+    padding: 15px;
+}
+
+#galary{
+    height: 80vh;
+    background-color: rgb(247, 0, 255);
+    text-align: center;
+    padding: 15px;
+}
+
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/***************************** transform  **************************************/
+/*
+ transform: rotate(45deg);
+ transform: translate(100px)
+ transform: scale(1,1);
+ transform: skew(45deg);
+*/
+.trans{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+   transition: all 2s;
+   margin: 70px auto;
+}
+
+.trans:hover{
+ /* transform: rotateX(180deg); */
+ /* border-radius: 50%; */
+ /* transform: translate(100px , 100px) ; */
+
+/* transform: scale(0.7,0.7); */
+/* transform: skew(45deg); */
+
+/* border-radius: 50%;
+background-color: goldenrod;
+border: 3px solid black; */
+
+transform: rotate(180deg) translate(100px , 100px) scale(.4 , .4) skew(45deg);
+}
+
+.transex{
+    width: 300px;
+    height: 300px;
+    margin: 50px auto;
+     position: relative;
+ overflow: hidden;
+}
+.transex img{
+    width: 100%;
+       border-radius: 10px;
+       transition: all 1s;
+}
+
+.transex:hover img{
+    transform: scale(1.2 ,1.2);
+} 
+
+.layerIm{
+    width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,0.6);
+   text-align: center;
+   color: #fff;
+   border-radius: 10px;
+   position: absolute;
+   top: 0;
+   opacity: 0;
+   transition: all 1s;
+
+ p{
+    margin-top: 100px;
+ }
+}
+
+.transex:hover .layerIm{
+    opacity: 1;
+}
+
+
+
+
+html{
+    /* font-size: 20px; */
+}
+.rem{
+    width: 4rem;
+    height: 4rem;
+    background-color: tan;
+}
+
+
+/**************************  css combinators  ***********************************/
+/*
+spacing   selects all <p> inside <section>, direct children as well
+>  selector selects all the<p> that are direct children of <section>
++
+~
+*/
+/* section ~ p{
+    color: red;
+} */
+
+
+section{
+    background-color: teal;
+    width: 40%;
+    padding: 10px;
+}
+section p{
+    padding: inherit;
+}
+
+
+
+
+/*********************  After && Before ***********************************/
+
+.AB{
+    text-align: center;
+    padding: 10px;
+    position: relative;
+}
+
+.AB::after{
+    content: "";
+    width: 40%;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+.AB::before{
+  content: "";
+    width: 40%;
+    height: 3px;
+    background-color: green;
+    position: absolute;
+    top: 50%;
+      left:15px;
+   
+}
+
+
+
+
+
+
+.cont{
+    border: 3px solid teal;
+    width: 15%;
+    padding: 20px;
+    text-align: center;
+    margin: 15px;
+    position: relative;
+}
+
+.cont::after{
+content: "";
+width: 30px;
+height: 30px;
+background-color: #fff;
+position: absolute;
+top: 90%;
+left: 15px;
+} 
+
+
+.cont::before{
+content: "";
+width: 7px;
+height: 30px;
+background-color: teal;
+position: absolute;
+top: 90%;
+left: 25px;
+z-index: 9999999;
+} 
+
+
+
+
+
+
+/******************************** icon ************************************/
+.icon{
+    margin: 15px;
+}
+.icon i{
+    color: #f00;
+    /* font-size: 20px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) and (min-width:992px) {
+    .item{
+          width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+    .item{
+          width: 50%
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:600px) {
+    .item{
+          width: 100%;
+    }
+}
+@media screen  and (max-width:599px){
+        .item{
+          width: 100%;
+    }
+}
