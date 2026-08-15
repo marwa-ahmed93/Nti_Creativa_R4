@@ -1,0 +1,238 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
+* Browsers: last 4 version
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+/******************************  animation ******************************************/
+/*
+  animation-name: coloring;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+*/
+
+.item{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+
+    -webkit-animation-name: coloring;
+
+            animation-name: coloring;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+@-webkit-keyframes coloring {
+    0%{background-color: teal;}
+    25%{background-color: red;}
+    50%{background-color: rgb(0, 255, 34);}
+    75%{background-color: rgb(84, 28, 148);}
+    100%{background-color: rgb(49, 12, 12);}
+}
+
+@keyframes coloring {
+    0%{background-color: teal;}
+    25%{background-color: red;}
+    50%{background-color: rgb(0, 255, 34);}
+    75%{background-color: rgb(84, 28, 148);}
+    100%{background-color: rgb(49, 12, 12);}
+}
+
+
+
+
+
+header{
+    background-image: url(../images/ben-garratt-134774-600x500\ \(1\).jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    -webkit-animation-name: slider;
+            animation-name: slider;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+}
+
+
+@-webkit-keyframes slider {
+    0%{ background-image: url(../images/ben-garratt-134774-600x500\ \(1\).jpg); width: 0; height: 0;}
+    25%{ background-image: url(../images/shutterstock_277750193.jpg);width: 100%; height: 100vh}
+    50%{ background-image: url(../images/clem-onojeghuo-206832-600x500.jpg); width: 0; height: 0}
+    75%{ background-image: url(../images/bgs.jpg); width: 100%; height: 100vh;}
+    100%{ background-image: url(../images/bg.jpg);width: 0; height: 0}
+}
+
+
+@keyframes slider {
+    0%{ background-image: url(../images/ben-garratt-134774-600x500\ \(1\).jpg); width: 0; height: 0;}
+    25%{ background-image: url(../images/shutterstock_277750193.jpg);width: 100%; height: 100vh}
+    50%{ background-image: url(../images/clem-onojeghuo-206832-600x500.jpg); width: 0; height: 0}
+    75%{ background-image: url(../images/bgs.jpg); width: 100%; height: 100vh;}
+    100%{ background-image: url(../images/bg.jpg);width: 0; height: 0}
+}
+
+/* body{
+    background-color: antiquewhite;
+} */
+
+.taxi{
+   
+    -webkit-animation-name: moveCar;
+   
+            animation-name: moveCar;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    position: relative;
+}
+@-webkit-keyframes moveCar {
+    0%{left: 0;  top: 0;  -webkit-transform: rotateY(180deg);  transform: rotateY(180deg);}    
+    50%{left: 800px;  top: 0; -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}    
+    51%{left: 800px;  top: 0; -webkit-transform: rotateY(0); transform: rotateY(0);}    
+    100%{left: 0;  top: 0; -webkit-transform: rotateY(0); transform: rotateY(0);}    
+}
+@keyframes moveCar {
+    0%{left: 0;  top: 0;  -webkit-transform: rotateY(180deg);  transform: rotateY(180deg);}    
+    50%{left: 800px;  top: 0; -webkit-transform: rotateY(180deg); transform: rotateY(180deg);}    
+    51%{left: 800px;  top: 0; -webkit-transform: rotateY(0); transform: rotateY(0);}    
+    100%{left: 0;  top: 0; -webkit-transform: rotateY(0); transform: rotateY(0);}    
+}
+
+
+h2{
+text-align: center;
+/* padding: 20px; */
+}
+h2::after{
+    content: "|";
+    -webkit-animation-name:typing ;
+            animation-name:typing ;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+}
+@-webkit-keyframes typing {
+    
+    0%{content: "|";}
+    2%{content: "|D";}
+    4%{content: "|De";}
+    6%{content: "|Dse";}
+    8%{content: "|Desi";}
+    10%{content: "|Desig";}
+    12%{content: "|Design";}
+    14%{content: "|Desig";}
+    16%{content: "|Desi";}
+    18%{content: "|Des";}
+    20%{content: "|De";}
+    22%{content: "|D";}
+    24%{content: "|De";}
+    26%{content: "|Dev";}
+    28%{content: "|Devl";}
+    30%{content: "|Devlo";}
+    32%{content: "|Devlopm";}
+    32%{content: "|Devlopm";}
+    32%{content: "|Devlopm";}
+
+
+}
+@keyframes typing {
+    
+    0%{content: "|";}
+    2%{content: "|D";}
+    4%{content: "|De";}
+    6%{content: "|Dse";}
+    8%{content: "|Desi";}
+    10%{content: "|Desig";}
+    12%{content: "|Design";}
+    14%{content: "|Desig";}
+    16%{content: "|Desi";}
+    18%{content: "|Des";}
+    20%{content: "|De";}
+    22%{content: "|D";}
+    24%{content: "|De";}
+    26%{content: "|Dev";}
+    28%{content: "|Devl";}
+    30%{content: "|Devlo";}
+    32%{content: "|Devlopm";}
+    32%{content: "|Devlopm";}
+    32%{content: "|Devlopm";}
+
+
+}
+
+
+
+
+/***********  css nesting   ****************************/
+nav{
+
+    &:hover{
+
+    }
+
+    ul{
+
+
+        li{
+
+        }
+    }
+
+
+}
+/* nav ul{
+
+
+}
+
+nav ul li{
+
+} */
+
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(196, 16, 16);
+   -webkit-box-shadow: 21px 18px 12px 7px rgba(147, 133, 133, 0.47);
+           box-shadow: 21px 18px 12px 7px rgba(147, 133, 133, 0.47);
+}
+
+h2{
+    /* text-shadow: 10px 10px 10px gray; */
+    text-shadow: -6px 26px 4px rgba(136,53,53,0.6);
+}
+
+
+
+.linear{
+    /* background-image: linear-gradient(45deg, rgba(221, 87, 87,0.4) 10% , rgba(44, 133, 44,0.4) 20% , rgba(38, 38, 180 , 0.4)  20% ) , url(../images/business-2.jpg); */
+   /* background-image: radial-gradient(rgb(15, 15, 182) , green , red); */
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    /* opacity: 0.4; */
+
+
+    background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
